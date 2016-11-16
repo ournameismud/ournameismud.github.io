@@ -1,0 +1,92 @@
+// /*
+//  ==============================================================
+//  Typography
+//  ==============================================================
+//  */
+//@include baseline();
+@include type-reveal();
+
+html {
+  @include font-baseline();
+  -ms-text-size-adjust    : 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body,
+html {
+  font-family: map-get($fonts, regular);
+}
+
+body {
+  @include font-size($base-font-size);
+  font-style             : normal;
+  font-weight            : normal;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color                  : c(type, base);
+}
+
+.heading-1,
+h1 {
+  font-family: map-get($fonts, brand);
+  margin     : 0 0 gutter(1);
+}
+
+.heading-2,
+h2 {
+  font-family: map-get($fonts, brand);
+  margin     : 0 0 gutter(1);
+}
+
+.heading-3,
+h3 {
+  font-family: map-get($fonts, brand);
+  margin     : 0 0 gutter(1);
+}
+
+.heading-4,
+h4 {
+  font-family: map-get($fonts, brand);
+  margin     : 0 0 gutter(1);
+}
+
+.heading-5,
+h5 {
+  font-family: map-get($fonts, brand);
+  margin     : 0 0 gutter(1);
+}
+
+.heading-6,
+h6 {
+  font-family: map-get($fonts, brand);
+  margin     : 0 0 gutter(1);
+}
+
+p {
+  margin: 0 0 gutter(1);
+}
+
+b,
+strong {
+  font-weight: normal;
+}
+
+em {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color          : inherit;
+  transition     : opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+address {
+  font-style: normal;
+}

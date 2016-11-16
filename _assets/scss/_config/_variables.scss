@@ -1,0 +1,89 @@
+// debugging
+$debug: false;
+
+
+/*
+  typography
+*/
+$base-font-size: 16;
+$mq-base-font-size: $base-font-size * 1px;
+$base-line-height: 27;
+$browser-default-font-size: 16;
+$magic-number: $base-line-height;
+$magic-ratio: $base-line-height / $base-font-size;
+
+/*
+  modular-scale
+  https://github.com/modularscale/modularscale-sass
+*/
+$golden:                        1.618;
+$minor-second:                  1.067;
+$major-second:                  1.125;
+$minor-third:                   1.2;
+$major-third:                   1.25;
+$perfect-fourth:                1.333;
+$augmented-fourth:              1.414;
+$perfect-fifth:                 1.5;
+$minor-sixth:                   1.6;
+$major-sixth:                   1.667;
+$minor-seventh:                 1.778;
+$major-seventh:                 1.875;
+$octave:                        2;
+$major-tenth:                   2.5;
+$major-eleventh:                2.667;
+$major-twelfth:                 3;
+$double-octave:                 4;
+
+$ms-base: 1em;
+$ms-ratio: $golden;
+
+/*
+  Font stack
+*/
+$fonts: (
+  brand: ("fatfrank",sans-serif),
+  regular: ("semplicitapro",sans-serif)
+);
+
+
+/*
+  Gutters
+*/
+$base-padding: 20;
+
+
+/*
+  Colours
+*/
+$white: #fff;
+$black: #000;
+$palettes:(
+  bg: (
+    body: #e5e5e5,
+    dark: #00234b,
+    light: #f2f4f6
+  ),
+  themes: (),
+  type: (
+    base: #00234b,
+    light: #8091a5
+  ),
+  buttons: (
+    upload: #bfc8d2
+  ),
+  states: (
+    upload: #bfc8d2
+  )
+);
+
+
+/*
+  Breakpoints
+*/
+
+$breakpoints: (
+  mobile:  320px,
+  tablet:  740px,
+  desktop: 980px,
+  wide:    1300px
+);
